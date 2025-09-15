@@ -86,15 +86,15 @@ export const requiremnts = {
 
 export const gameDownloadOptions = [
   {
-    url: "https://storage.googleapis.com/euphoric-anchor-397613.appspot.com/Katana-inu-Launcher-v3.1.4-signed.exe",
+    url: "https://download.katanainu.com/Katanainu-launcher.exe",
     imgPath: "/assets/images/download_btn.png",
   },
   {
-    url: "https://storage.googleapis.com/euphoric-anchor-397613.appspot.com/Katana-inu-Launcher-v3.1.4-signed.exe",
+    url: "https://download.katanainu.com/Katanainu-launcher.exe",
     imgPath: "/assets/images/play_with_launcher.png",
   },
   {
-    url: "https://storage.googleapis.com/euphoric-anchor-397613.appspot.com/Katana-inu-Launcher-v3.1.4-signed.exe",
+    url: "https://download.katanainu.com/Katanainu-launcher.exe",
     label: "Download directly",
   },
 ];
