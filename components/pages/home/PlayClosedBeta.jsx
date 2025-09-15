@@ -37,7 +37,7 @@ const PlayClosedBeta = () => {
             </Link>
           ))}
           <Link
-            href={"https://store.hyperplay.xyz/game/katanainu"}
+            href={"https://download.katanainu.com/Katanainu-launcher.exe"}
             target="_blank"
             rel="noreferrer"
             className=""
