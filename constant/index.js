@@ -81,7 +81,7 @@ export const navlinks = {
       name: "twitter",
     },
     {
-      path: "https://discord.com/invite/katanainu",
+      path: "https://discord.gg/KatanaInuOfficial",
       imageUrl: "/assets/icons/discord.svg",
       imageUrlC: "/assets/icons/discord-c.svg",
       name: "discord",
