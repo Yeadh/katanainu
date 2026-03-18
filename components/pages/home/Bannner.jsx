@@ -1,7 +1,6 @@
 import ArrowIcon from "@/components/shared/ArrowIcon";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { bannerButtonData } from "@/data";
+//import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -33,8 +32,15 @@ const Bannner = () => {
             className="lg:w-[741px] lg:h-[88px]"
           />
         </h1>
-        <h2 className="text-lg lg:text-[28px] uppercase text-white font-medium font-poppins">
-          Multiplayer on-chain action game
+        <h2 className=" uppercase text-white font-medium font-poppins">
+          1. Katana Inu is a fast paced action game built for players who love
+          skill, speed and competition.
+        </h2>
+
+        <h2 className="medium:text-[13px] uppercase text-white font-medium font-poppins w-[71%]">
+          2. Play Katana Inu your way. Available on Steam as a classic Web2
+          game, with Web3 ecosystem features through the official Katana Inu
+          launcher.
         </h2>
 
         {/* btn */}
@@ -48,42 +54,12 @@ const Bannner = () => {
               variant="customAnimated"
               className="flex items-center gap-2 min-w-[190px] text-sm sm:text-base"
             >
-              Mint NFTs
+              Play on Steam
               <ArrowIcon />
             </Button>
           </Link>
-
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button
-                variant="customAnimated"
-                className="flex items-center gap-2 min-w-[190px] text-sm sm:text-base"
-                key={2}
-              >
-                Purchase Token
-                <ArrowIcon />
-              </Button>
-            </DialogTrigger>
-            <DialogContent className="bg-[#0c0b0bc4] border-transparent flex flex-col gap-2 md:gap-3 xl:gap-3.5 p-8 lg:p-12">
-              {/* <Button variant="customAnimated" className="w-full py-4" key={1}>
-                Mahedi
-              </Button> */}
-              {bannerButtonData.map((data, i) => (
-                <Link href={data.link} target="_blank" rel="norefferer" key={i}>
-                  <Button
-                    variant="customAnimated"
-                    className="w-full py-2 md:py-3 lg:py-4 xl:py-5 2xl:py-[22px] text-xs lg:text-sm sm:text-base"
-                    key={i}
-                  >
-                    {data.label}
-                  </Button>
-                </Link>
-              ))}
-            </DialogContent>
-          </Dialog>
-
           <Link
-            href={"https://play.katanainu.com/"}
+            href={"https://babydoge.katanainu.com/"}
             target="_blank"
             rel="norefferer"
           >
@@ -91,7 +67,20 @@ const Bannner = () => {
               variant="customAnimated"
               className="flex items-center gap-2 min-w-[190px] text-sm sm:text-base"
             >
-              Play
+              Launcher
+              <ArrowIcon />
+            </Button>
+          </Link>
+          <Link
+            href={"https://babydoge.katanainu.com/"}
+            target="_blank"
+            rel="norefferer"
+          >
+            <Button
+              variant="customAnimated"
+              className="flex items-center gap-2 min-w-[190px] text-sm sm:text-base"
+            >
+              Join Community
               <ArrowIcon />
             </Button>
           </Link>

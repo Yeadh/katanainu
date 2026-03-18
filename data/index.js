@@ -1,15 +1,14 @@
 export const aboutKatanaInu = [
   {
-    text: "Katana Inu is an on-chain multiplayer game with both Free2Play and Play & Earn elements, featuring insanely snappy sword and spell fighting.",
+    text: "Katana Inu will launch on Steam as a pure Web2 game 100%, with no blockchain or NFT requirements. Anyone can jump in instantly and enjoy the full game just like any other competitive action title. Without any restriction and 100% all update! Our goal is simple: bring Katana Inu to millions of gamers worldwide and deliver a fast-paced, skill-based experience that stands on its own.",
   },
   {
-    text: "Set in a third-person perspective, Katana Inu immerses players in fast-paced combat, wielding katanas and unleashing powerful spells. The game focuses on a Play-To-Own approach, enticing gamers from Web2 to embrace the Web3 revolution while providing an exceptional and fair gaming experience. All in-game skins and spells are purely cosmetic, ensuring a level playing field.",
+    text: "Web2 gamer was our main goal from the start of this game.",
   },
+];
+export const aboutKatanaInuWeb3Integration = [
   {
-    text: "Compete with players worldwide, climb the ranks, collect rare NFTs that showcase your prowess, and take part in thrilling tournaments and esports leagues. 'Katana Inu' is designed to be a hub of competitive action and digital collectibles, offering an exciting fusion of strategy, skill, and the allure of blockchain-based ownership.",
-  },
-  {
-    text: "As you delve into this dynamic gaming universe, you'll discover an inviting and passionate community of fellow gamers. With the goal of mass adoption and the desire to challenge established gaming giants. We invite you to experience the future of gaming where fun, competitiveness, and NFT ownership merge seamlessly.",
+    text: "At the same time, Katana Inu is also built as a Web3-enabled game through our dedicated game launcher. Players who choose to connect to the Web3 ecosystem can access NFTs, Play-to-Earn mechanics, and the broader Katana Inu economy.",
   },
 ];
 

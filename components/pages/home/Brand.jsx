@@ -1,11 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { brandLinks } from "@/constant";
-import { aboutKatanaInu } from "@/data";
+import { aboutKatanaInu, aboutKatanaInuWeb3Integration } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
-import { FaCircleArrowRight, FaDiscord, FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
-import BrandLogo from "./BrandLogo";
+import { FaCircleArrowRight, FaDiscord, FaXTwitter } from "react-icons/fa6";
 
 const Brand = () => {
   return (
@@ -23,7 +21,11 @@ const Brand = () => {
         {/* texts */}
         <div className="flex-1 py-10">
           <h2 className="text-lg md:text-xl xl:text-2xl text-[#f5a238] pb-4 sm:pb-6">
-            About katana inu
+            Katana Inu Web3 & Web2
+          </h2>
+
+          <h2 className="text-lg md:text-xl xl:text-2xl text-[#f5a238] pt-4 sm:pt-6">
+            Steam & Web2:
           </h2>
           <ul className="ml-0">
             {aboutKatanaInu.map((li, i) => (
@@ -42,7 +44,26 @@ const Brand = () => {
               </li>
             ))}
           </ul>
-
+          <h2 className="text-lg md:text-xl xl:text-2xl text-[#f5a238] pt-4 sm:pt-6">
+            Web3 Integration:
+          </h2>
+          <ul className="ml-0">
+            {aboutKatanaInuWeb3Integration.map((li, i) => (
+              <li
+                key={i}
+                className="flex items-start gap-2 py-3 font-medium text-[#e7e7e7] list-none"
+              >
+                <span className="w-4">
+                  <FaCircleArrowRight
+                    color="#f5a238"
+                    size={16}
+                    className="inline-flex"
+                  />
+                </span>
+                <span>{li.text}</span>
+              </li>
+            ))}
+          </ul>
           {/* btn */}
           <div className="flex flex-wrap xl:flex-nowrap items-center justify-center xl:justify-between gap-3 pt-2 2xl:pt-4 mx-1">
             <Link
