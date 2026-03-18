@@ -46,7 +46,7 @@ const Bannner = () => {
         {/* btn */}
         <div className="flex flex-wrap sm:flex-nowrap items-center justify-center gap-3 pt-2">
           <Link
-            href={"https://babydoge.katanainu.com/"}
+            href={"https://store.steampowered.com/app/2706070/Katana_Inu/"}
             target="_blank"
             rel="norefferer"
           >
@@ -59,7 +59,7 @@ const Bannner = () => {
             </Button>
           </Link>
           <Link
-            href={"https://babydoge.katanainu.com/"}
+            href={"https://play.katanainu.com/"}
             target="_blank"
             rel="norefferer"
           >
@@ -72,7 +72,7 @@ const Bannner = () => {
             </Button>
           </Link>
           <Link
-            href={"https://babydoge.katanainu.com/"}
+            href={"https://t.me/katanainu"}
             target="_blank"
             rel="norefferer"
           >
