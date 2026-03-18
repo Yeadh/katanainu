@@ -72,7 +72,7 @@ const Bannner = () => {
             </Button>
           </Link>
           <Link
-            href={"https://t.me/katanainu"}
+            href={"https://discord.gg/BedhH7CXGz"}
             target="_blank"
             rel="norefferer"
           >

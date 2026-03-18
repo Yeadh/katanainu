@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import axios from "axios";
+import { useState } from "react";
 import toast from "react-hot-toast";
 import { Button } from "./ui/button";
 
@@ -19,7 +19,7 @@ const Register = () => {
         null,
         {
           params: { email },
-        }
+        },
       );
       toast.success("Registration is successfull!");
       setLoading(false);
@@ -40,7 +40,7 @@ const Register = () => {
         <div className="flex flex-row-reverse justify-center sm:justify-start items-center min-h-[160px] sm:min-h-[180px] md:min-h-[200px] lg:min-h-[260px] xl:min-h-[300px] 2xl:min-h-[360px] relative z-20 pr-5">
           <div className="flex flex-col gap-0.5 lg:gap-1">
             <h3 className="font-poppins font-semibold text-white shadow-lg uppercase italic text-xs leading-none sm:text-sm sm:leading-tight md:text-base md:leading-tight lg:text-lg lg:leading-[1] 2xl:text-xl">
-              ARE YOU READY? OPEN BETA April 2025
+              ARE YOU READY? OPEN BETA COMING SOON
             </h3>
             <h1 className="text-[#ffcc00] font-poppins font-extrabold uppercase italic text-xl leading-none sm:text-xl sm:leading-none md:text-2xl md:leading-tight lg:text-3xl xl:text-4xl 2xl:text-5xl">
               Register Now

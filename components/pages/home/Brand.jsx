@@ -21,7 +21,7 @@ const Brand = () => {
         {/* texts */}
         <div className="flex-1 py-10">
           <h2 className="text-lg md:text-xl xl:text-2xl text-[#f5a238] pb-4 sm:pb-6">
-            Katana Inu Web3 & Web2
+            Katana Inu Web2 & Web3
           </h2>
 
           <h2 className="text-lg md:text-xl xl:text-2xl text-[#f5a238] pt-4 sm:pt-6">
