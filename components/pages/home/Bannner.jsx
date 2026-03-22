@@ -37,10 +37,10 @@ const Bannner = () => {
           skill, speed and competition.
         </h2>
 
-        <h2 className="medium:text-[13px] uppercase text-white font-medium font-poppins w-[71%]">
+        <h2 className="medium:text-[13px] uppercase text-white font-medium font-poppins">
           2. Play Katana Inu your way. Available on Steam as a classic Web2
-          game, with Web3 ecosystem features through the official Katana Inu
-          launcher.
+          game, with Web3 ecosystem <br></br>features through the official
+          Katana Inu launcher.
         </h2>
 
         {/* btn */}
