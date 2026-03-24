@@ -655,7 +655,7 @@ button:hover .ql-fill,
 .trailer-swiper .swiper-button-prev {
   left: var(--swiper-navigation-sides-offset, 0px) !important;
 }
-img.object-cover {
+.cardd img.object-cover {
   width: 70% !important;
   height: 120% !important;
   left: 24px !important;

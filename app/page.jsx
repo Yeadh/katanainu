@@ -26,10 +26,10 @@ export default function Home() {
       {/* <BabyDogeImage /> */}
       <div className="bg-[url('/assets/images/background.jpg')] bg-[50%_25%] bg-cover z-[1]  relative brand_container">
         {/* <Blogs /> */}
-        <Trailers />
+
         <Requirements />
         <PlayClosedBeta />
-
+        <Trailers />
         <ChoosePlayer />
         <TokenOverview />
         <Partner />

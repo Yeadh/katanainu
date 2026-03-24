@@ -18,7 +18,7 @@ const games = [
 export default function GameCards() {
   return (
     <div className="w-full p-6 flex justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl w-[70%]">
+      <div className="cardd grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl w-[70%]">
         {games.map((game) => (
           <div
             key={game.id}
