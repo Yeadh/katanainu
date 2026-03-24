@@ -2,7 +2,7 @@ import { requiremnts } from "@/data";
 
 const Requirements = () => {
   return (
-    <section className="main-container section-margin">
+    <section className="main-container mt-0 pt-20">
       <div className="flex flex-col gap-6 lg:gap-8 2xl:gap-10 justify-center items-center">
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center gap-1">
