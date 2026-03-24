@@ -2,6 +2,7 @@ import Bannner from "@/components/pages/home/Bannner";
 import Brand from "@/components/pages/home/Brand";
 import BrandLogo from "@/components/pages/home/BrandLogo";
 import ChoosePlayer from "@/components/pages/home/ChoosePlayer";
+//import GameCards from "@/components/pages/home/Gamecard";
 import Newsletter from "@/components/pages/home/Newsletter";
 import Partner from "@/components/pages/home/Partner";
 import PlayClosedBeta from "@/components/pages/home/PlayClosedBeta";

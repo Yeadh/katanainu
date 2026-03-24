@@ -80,7 +80,15 @@ ul {
 }
 
 .access-key-video-container img {
-  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
+  -webkit-box-reflect: below
+    0px -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(transparent),
+      color-stop(70%, transparent),
+      to(rgba(250, 250, 250, 0.1))
+    );
   width: 82%;
   margin-left: 0%;
 }
@@ -647,7 +655,11 @@ button:hover .ql-fill,
 .trailer-swiper .swiper-button-prev {
   left: var(--swiper-navigation-sides-offset, 0px) !important;
 }
-
+img.object-cover {
+  width: 70% !important;
+  height: 120% !important;
+  left: 24px !important;
+}
 /* .player-swiper .swiper-button-next {
   right: var(--swiper-navigation-sides-offset, 0px) !important;
 }

@@ -1,8 +1,7 @@
-import { gameDownloadOptions, gameTags } from "@/data";
+import GameCards from "@/components/pages/home/Gamecard";
+import { gameDownloadOptions } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
-import { FaDiscord } from "react-icons/fa6";
-import Tags from "./Tags";
 
 const PlayClosedBeta = () => {
   return (
@@ -124,132 +123,7 @@ const PlayClosedBeta = () => {
         </div>
 
         {/* access key and other data */}
-        <div className="flex flex-col md:flex-row gap-5 items-center mt-4">
-          <div className="flex flex-col items-center md:items-start gap-1 flex-1">
-            <div className="flex items-center gap-5">
-              <Image
-                src="/assets/images/key.png"
-                alt="game access key"
-                width={32}
-                height={32}
-              />
-              <h2 className="font-jost text-white/70 text-[22px] w-full py-5 px-3 md:w-[65%]">
-                Don’t have{" "}
-                <span className="text-[#f9c306]">an access key?</span> Sign up
-                to our newsletter & join our Discord to stay updated on
-                opportunities to win one!
-              </h2>
-            </div>
-            {/* discord btn */}
-            <Link
-              href="https://discord.com/invite/katanainu"
-              className="flex justify-center items-center gap-3 font-jost font-semibold text-white p-4 w-full lg:w-[80%] bg-[#808aff] rounded-lg mt-1 mb-2"
-            >
-              Win A Key By Joining Our Discord
-              <FaDiscord color="#fff" size={32} />
-            </Link>
-            {/* access key with options */}
-            <div className="flex flex-col gap-1 font-jost w-full">
-              <p className="text-sm sm:text-base md:text-lg text-white/70 w-full lg:w-[80%]">
-                You can access our closed beta without an access key if you:
-              </p>
-
-              {/* 1st key options */}
-              <div className="access-key-options-1 relative w-full lg:w-[80%]">
-                <Link href={"#"} target="_blank" rel="noreffrer">
-                  <h3 className="font-jost italic text-base sm:text-lg text-white font-semibold uppercase">
-                    Hold <span className="text-[#f9c306]">30K</span> $KATA
-                    TOKENS
-                  </h3>
-                </Link>
-              </div>
-
-              {/* divider image */}
-              <div className="w-full lg:w-[80%] flex justify-center items-center">
-                <Image
-                  src="/assets/images/devider.png"
-                  alt="divider"
-                  width={270}
-                  height={18}
-                />
-              </div>
-
-              {/* 2nd key options */}
-              <div className="access-key-options-2 relative w-full lg:w-[80%]">
-                <Link
-                  href={"https://opensea.io/collection/katanainu-takeru"}
-                  target="_blank"
-                  rel="noreffrer"
-                >
-                  <h3 className="font-jost italic text-base sm:text-lg text-white font-semibold uppercase pr-[42%]">
-                    Hold{" "}
-                    <span className="text-[#f9c306]">
-                      1 Takeru Genesis Collection NFT
-                    </span>
-                  </h3>
-                </Link>
-              </div>
-
-              {/* divider image */}
-              <div className="w-full lg:w-[80%] flex justify-center items-center">
-                <Image
-                  src="/assets/images/devider.png"
-                  alt="divider"
-                  width={270}
-                  height={18}
-                />
-              </div>
-
-              {/* 3rd key options */}
-              <div className="access-key-options-3 relative w-full lg:w-[80%]">
-                <Link
-                  href={"https://hub.gamezone.io/projects/kata-inu"}
-                  target="_blank"
-                  rel="noreffrer"
-                >
-                  <h3 className="font-jost italic text-base sm:text-lg text-white font-semibold uppercase pr-[25%] hover:text-[#f9c306] transition-all duration-300 ease-in-out">
-                    Hold one of the below combinations for the{" "}
-                    <span className="text-[#f9c306]">
-                      GameZone Sword or Bluezilla Axe NFT&apos;s:
-                    </span>
-                  </h3>
-                </Link>
-              </div>
-
-              {/* tags */}
-              <Tags />
-            </div>
-          </div>
-
-          {/* images and videos */}
-          <div className="text-white flex-1">
-            <div className="relative z-[1] access-key-video-container flex justify-center items-center">
-              <Image
-                src="/assets/images/download_img.png"
-                alt="background image with bunch of nfts game characters"
-                width={562}
-                height={738}
-              />
-
-              <div className="absolute top-[35%] left-[1%] h-[290px] sm:h-[405px] w-[99%]">
-                <div
-                  className="relative w-full"
-                  style={{ paddingTop: "56.25%" }}
-                >
-                  <iframe
-                    className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/2haLfdquhHk?si=SCeN_9zCBMJZyENE&autoplay=1&mute=1"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <GameCards />
       </div>
     </section>
   );
