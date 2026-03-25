@@ -23,7 +23,7 @@ const GameCard = () => {
           <div className="flex items-center justify-center gap-2 mb-2">
             <span className="text-yellow-500 text-xl">✦</span>
             <h2 className="text-yellow-500 font-black text-2xl tracking-tighter uppercase italic">
-              WEB3 GAME
+              WEB2 GAME
             </h2>
             <span className="text-yellow-500 text-xl">✦</span>
           </div>
