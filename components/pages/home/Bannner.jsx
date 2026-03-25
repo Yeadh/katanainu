@@ -32,17 +32,18 @@ const Bannner = () => {
             className="lg:w-[741px] lg:h-[88px]"
           />
         </h1>
-        <h2 className=" uppercase text-white font-medium font-poppins w-[55%]">
-          1. Katana Inu is a fast paced action game built for players who love
-          skill, speed and competition.
-        </h2>
+        <div className="banner-content w-full md:w-1/2 lg:w-1/3">
+          <h2 className=" uppercase text-white font-medium font-poppins">
+            1. Katana Inu is a fast paced action game built for players who love
+            skill, speed and competition.
+          </h2>
 
-        <h2 className="medium:text-[13px] uppercase text-white font-medium font-poppins w-[55%]">
-          2. Play Katana Inu your way. Available on Steam as a classic Web2
-          game, with Web3 ecosystem features through the official Katana Inu
-          launcher.
-        </h2>
-
+          <h2 className="medium:text-[13px] uppercase text-white font-medium font-poppins">
+            2. Play Katana Inu your way. Available on Steam as a classic Web2
+            game, with Web3 ecosystem features through the official Katana Inu
+            launcher.
+          </h2>
+        </div>
         {/* btn */}
         <div className="flex flex-wrap sm:flex-nowrap items-center justify-center gap-3 pt-2">
           <Link

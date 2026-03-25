@@ -60,6 +60,13 @@ const extraVideos = [
 
 const Brand = () => {
   const [videos, setVideos] = useState("Vj4eSet_2nA");
+  const features = [
+    "Distinct visual style",
+    "High-quality AAA graphics",
+    "Skill-based gameplay",
+    "Community-driven competition",
+    "No Pay2Win — only Fun2Play",
+  ];
   return (
     <div className="text-white">
       <section className=" flex flex-col gap-5 sm:gap-7 lg:flex-row  main-container">
@@ -134,24 +141,23 @@ const Brand = () => {
               and Battle Royale (more coming in the future).
             </li>
           </ul>
-          <ul className="flex flex-row gap-2 my-4 list-none">
-            <li className="rounded-[14px] border border-[#f5a238] py-2 px-4">
-              Distinct visual style
-            </li>
-            <li className="rounded-[14px] border border-[#f5a238] py-2 px-4">
-              High-quality AAA graphics
-            </li>
-            <li className="rounded-[14px] border border-[#f5a238] py-2 px-4">
-              Skill-based gameplay
-            </li>
-            <li className="rounded-[14px] border border-[#f5a238] py-2 px-4">
-              Community-driven competition
-            </li>
-
-            <li className="rounded-[14px] border border-[#f5a238] py-2 px-4">
-              No Pay2Win — only Fun2Play
-            </li>
-          </ul>
+          <div className="w-full bg-black py-10 px-4">
+            <div className="max-w-7xl mx-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                {features.map((item, index) => (
+                  <div
+                    key={index}
+                    className="border border-orange-500 rounded-xl p-4 text-center text-white 
+                              hover:bg-orange-500/10 transition duration-300"
+                  >
+                    <p className="text-sm sm:text-base font-medium leading-snug">
+                      {item}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
           <ul className="ml-0">
             {aboutKatanaInu.map((li, i) => (
               <li

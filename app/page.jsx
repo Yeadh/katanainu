@@ -8,8 +8,7 @@ import Partner from "@/components/pages/home/Partner";
 import PlayClosedBeta from "@/components/pages/home/PlayClosedBeta";
 import Requirements from "@/components/pages/home/Requirements";
 import TokenOverview from "@/components/pages/home/TokenOverview";
-import Trailers from "@/components/pages/home/Trailers";
-//import WhereToBuyToken from "@/components/pages/home/WhereToBuyToken";
+import WhereToBuyToken from "@/components/pages/home/WhereToBuyToken";
 //import WinBySharing from "@/components/pages/home/WinBySharing";
 import Register from "@/components/Register";
 //import AboutVideo from "@/components/pages/home/AboutVideo";
@@ -18,10 +17,10 @@ export default function Home() {
   return (
     <main className="">
       <Bannner />
-      <BrandLogo />
+
       {/* <WinBySharing /> */}
       <Register />
-      {/* <WhereToBuyToken /> */}
+
       <div className="bg-[url('/assets/images/background.jpg')] bg-[0%_25%] bg-cover z-[1]  relative brand_container">
         <Brand />
       </div>
@@ -29,17 +28,18 @@ export default function Home() {
       <div className="bg-[url('/assets/images/background.jpg')] bg-[50%_25%] bg-cover z-[1]  relative brand_container">
         {/* <Blogs /> */}
 
-        
         <PlayClosedBeta />
         <FAQPage />
-        <Trailers />
+        {/* <Trailers /> */}
         <ChoosePlayer />
         <TokenOverview />
+        <WhereToBuyToken />
         <Requirements />
         <Partner />
         <div className="w-full bg-black">
           <Newsletter />
         </div>
+        <BrandLogo />
       </div>
     </main>
   );

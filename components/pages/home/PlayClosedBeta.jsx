@@ -35,7 +35,7 @@ const PlayClosedBeta = () => {
               )}
             </Link>
           ))}
-          <Link
+          {/* <Link
             href={"https://download.katanainu.com/Katanainu-launcher.exe"}
             target="_blank"
             rel="noreferrer"
@@ -48,7 +48,7 @@ const PlayClosedBeta = () => {
               height={73}
               className="sm:w-[160px] md:w-[180px] lg:h-[75px] lg:w-[200px] object-cover sm:object-contain rounded-lg"
             />
-          </Link>
+          </Link> */}
         </div>
 
         {/* pvp */}

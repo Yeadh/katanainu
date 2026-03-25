@@ -1,0 +1,277 @@
+/* components/Web2Banner.module.css */
+
+.banner {
+  position: relative;
+  width: 600px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #06030f;
+  border: 1px solid rgba(200, 140, 0, 0.18);
+  box-shadow: 0 0 16px rgba(180, 80, 0, 0.1);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* ── Photo ── */
+.photoWrap {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+}
+
+.photoWrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 170px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(6, 3, 15, 0.45) 35%,
+    rgba(6, 3, 15, 0.85) 62%,
+    #06030f 100%
+  );
+  z-index: 2;
+}
+
+.photoWrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(to right, rgba(6,3,15,0.4) 0%, transparent 18%, transparent 82%, rgba(6,3,15,0.4) 100%),
+    linear-gradient(to bottom, rgba(6,3,15,0.25) 0%, transparent 25%);
+}
+
+/* ── Embers ── */
+@keyframes ember {
+  0%   { transform: translate(0, 0) scale(1); opacity: 0; }
+  20%  { opacity: 1; }
+  100% { transform: translate(var(--dx, -20px), -180px) scale(0.3); opacity: 0; }
+}
+
+.ember {
+  position: absolute;
+  bottom: 0;
+  width: 2px; height: 2px;
+  border-radius: 50%;
+  background: #e09000;
+  box-shadow: 0 0 3px 1px rgba(200, 130, 0, 0.4);
+  animation: ember 5s ease-in infinite;
+  z-index: 3;
+  opacity: 0.5;
+}
+.ember1 { left: 22%; animation-delay: 0s;   --dx: -30px; }
+.ember2 { left: 38%; animation-delay: 0.7s; --dx: 20px;  }
+.ember3 { left: 52%; animation-delay: 1.3s; --dx: -15px; }
+.ember4 { left: 68%; animation-delay: 0.4s; --dx: 25px;  }
+.ember5 { left: 80%; animation-delay: 1.9s; --dx: -20px; }
+
+/* ── Content ── */
+.content {
+  position: relative;
+  z-index: 10;
+  padding: 6px 24px 28px;
+  margin-top: -90px;
+  background: linear-gradient(to bottom, transparent 0%, #06030f 90px);
+}
+
+/* ── Tag ── */
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.tagLine {
+  flex: 1;
+  height: 1px;
+  max-width: 55px;
+  background: linear-gradient(90deg, transparent, #f0a500);
+}
+
+.tagLineRight {
+  background: linear-gradient(90deg, #f0a500, transparent);
+}
+
+.tagText {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  letter-spacing: 6px;
+  color: #f0a500;
+  text-shadow: 0 0 6px rgba(240, 165, 0, 0.4), 0 0 14px rgba(240, 130, 0, 0.18);
+}
+
+/* ── Headline ── */
+.headline {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.1;
+  text-align: center;
+  color: #f0eaff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  margin: 0 0 5px;
+  letter-spacing: 1.5px;
+}
+
+.subline {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(200, 185, 240, 0.7);
+  letter-spacing: 1px;
+  margin: 0 0 18px;
+}
+
+/* ── Features ── */
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.feat {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, rgba(12,6,30,0.97) 0%, rgba(8,3,22,0.99) 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(80, 130, 255, 0.3);
+  overflow: hidden;
+  cursor: default;
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+
+.feat::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 10%; right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(140,180,255,0.22), transparent);
+}
+
+.feat:hover {
+  transform: translateY(-2px);
+  border-color: rgba(120, 170, 255, 0.5);
+  box-shadow: 0 4px 14px rgba(60, 40, 180, 0.2);
+}
+
+.featPurple {
+  border-color: rgba(160, 60, 255, 0.32);
+}
+
+.featPurple::after {
+  background: linear-gradient(90deg, transparent, rgba(200,120,255,0.22), transparent);
+}
+
+.featPurple:hover {
+  border-color: rgba(200, 90, 255, 0.5);
+  box-shadow: 0 4px 14px rgba(140, 20, 220, 0.2);
+}
+
+.featIcon {
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  font-size: 22px;
+  background: linear-gradient(145deg, rgba(30,50,130,0.5) 0%, rgba(15,8,50,0.85) 100%);
+  border: 1px solid rgba(90, 130, 255, 0.2);
+}
+
+.featPurple .featIcon {
+  background: linear-gradient(145deg, rgba(90,25,150,0.5) 0%, rgba(30,8,70,0.85) 100%);
+  border-color: rgba(170, 70, 255, 0.2);
+}
+
+.featTitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #e8e0ff;
+  letter-spacing: 0.4px;
+  line-height: 1.2;
+}
+
+.featSub {
+  font-size: 13px;
+  color: rgba(160, 148, 210, 0.78);
+  font-weight: 400;
+  margin-top: 3px;
+  line-height: 1.35;
+}
+
+/* Steam icon in feature card */
+.steamIconSmall {
+  width: 26px; height: 26px;
+  fill: #a0b8ff;
+}
+
+/* ── F2P label ── */
+.f2p {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+/* ── CTA ── */
+.ctaBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 3px;
+  color: #f0a500;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0a0518 0%, #110828 50%, #0d0620 100%);
+  border: 1px solid rgba(200, 130, 0, 0.35);
+  text-shadow: 0 0 6px rgba(240, 150, 0, 0.35);
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+}
+
+.ctaBtn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+  animation: shine 3.5s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0%   { left: -100%; }
+  40%  { left: 130%; }
+  100% { left: 130%; }
+}
+
+.ctaBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 14px rgba(200, 120, 0, 0.22);
+  border-color: rgba(220, 150, 0, 0.5);
+}
+
+/* Steam icon in CTA button */
+.steamIconBtn {
+  width: 26px; height: 26px;
+  fill: #f0a500;
+  flex-shrink: 0;
+}

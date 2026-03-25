@@ -1,11 +1,11 @@
 "use client";
 
-import Link from "next/link";
-import { FaCopy } from "react-icons/fa6";
-import { useState } from "react";
+import { Button } from "@/components/ui/button";
 import { kataTokenStorePartner } from "@/data";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { useState } from "react";
+import { FaCopy } from "react-icons/fa6";
 
 const tokenStore = [
   {
@@ -94,7 +94,7 @@ const WhereToBuyToken = () => {
       </div>
 
       <div className="overflow-hidden">
-        <ul className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 items-center ml-0">
+        <ul className="grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 flex justify-center items-center">
           {kataTokenStorePartner.map((store, i) => (
             <li key={i} className="mx-auto sm:mx-4 my-2 list-none">
               <Link href={store.link} target="_blank" rel="norefferer">

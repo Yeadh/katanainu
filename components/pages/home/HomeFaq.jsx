@@ -38,7 +38,7 @@ export default function FAQPage() {
   };
 
   return (
-    <div className="min-h-screen px-4 py-10">
+    <div className="px-4 py-10">
       <div className="max-w-3xl mx-auto">
         <h5 className="text-3xl font-bold text-center mb-8">
           Frequently Asked Questions
@@ -59,7 +59,7 @@ export default function FAQPage() {
               </div>
 
               {activeIndex === index && (
-                <p className="mt-3 text-gray-600">{faq.answer}</p>
+                <p className="mt-3 text-white">{faq.answer}</p>
               )}
             </div>
           ))}
