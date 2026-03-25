@@ -12,6 +12,8 @@ import Trailers from "@/components/pages/home/Trailers";
 //import WhereToBuyToken from "@/components/pages/home/WhereToBuyToken";
 //import WinBySharing from "@/components/pages/home/WinBySharing";
 import Register from "@/components/Register";
+//import AboutVideo from "@/components/pages/home/AboutVideo";
+import FAQPage from "@/components/pages/home/HomeFaq";
 export default function Home() {
   return (
     <main className="">
@@ -27,11 +29,13 @@ export default function Home() {
       <div className="bg-[url('/assets/images/background.jpg')] bg-[50%_25%] bg-cover z-[1]  relative brand_container">
         {/* <Blogs /> */}
 
-        <Requirements />
+        
         <PlayClosedBeta />
+        <FAQPage />
         <Trailers />
         <ChoosePlayer />
         <TokenOverview />
+        <Requirements />
         <Partner />
         <div className="w-full bg-black">
           <Newsletter />

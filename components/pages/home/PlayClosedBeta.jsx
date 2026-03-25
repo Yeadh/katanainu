@@ -5,16 +5,16 @@ import Link from "next/link";
 
 const PlayClosedBeta = () => {
   return (
-    <section className="main-container section-margin">
+    <section className="main-container mt-0 pt-8">
       <div className="flex flex-col gap-1 justify-center items-center">
         <h4 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px]  text-gradient font-semibold uppercase font-jost">
           Play Our
         </h4>
         <h4 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] text-white font-bold uppercase font-jost">
-          closed beta now!
+          demo on steam from 11-21 april!
         </h4>
         <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white font-medium font-jost text-center">
-          Download Now If You Have An Access Key:
+          Download Now If You Have classic web2 or optional web3 ecosystem.
         </h2>
 
         {/* download options */}
@@ -89,6 +89,9 @@ const PlayClosedBeta = () => {
           </span>
           <span className="rounded-[18px] border border-[#f5a238] py-2 px-4 font-bold font-jost text-[#f9c306] text-xl md:text-2xl italic">
             3vs3
+          </span>
+          <span className="rounded-[18px] border border-[#f5a238] py-2 px-4 font-bold font-jost text-[#f9c306] text-xl md:text-2xl italic">
+            ballte royel
           </span>
         </div>
         <div className="hidden sm:block">

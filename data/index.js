@@ -1,9 +1,28 @@
 export const aboutKatanaInu = [
   {
-    text: "Katana Inu will launch on Steam as a pure Web2 game 100%, with no blockchain or NFT requirements. Anyone can jump in instantly and enjoy the full game just like any other competitive action title. Without any restriction and 100% all update! Our goal is simple: bring Katana Inu to millions of gamers worldwide and deliver a fast-paced, skill-based experience that stands on its own.",
+    text: "Katana Inu is a multiplayer action game built first for Web2 players, combining Free2Play gameplay with an optional Web3 ecosystem, featuring extremely responsive sword and spell combat.",
   },
   {
-    text: "Web2 gamer was our main goal from the start of this game.",
+    text: "Katana Inu is a fast paced action game built for players first. On Steam, the game is available as a classic Web2 experience focused on gameplay, competition and accessibility. For players who want more, the official Katana Inu launcher provides optional Web3 connected features as a separate way to engage with the broader Katana Inu ecosystem. You choose how you want to play.",
+  },
+
+  {
+    text: "Play Katana Inu as a traditional competitive game on Steam, showcase your skills, and battle against friends or players from around the world.",
+  },
+  {
+    text: "For players who want to go further, the Katana Inu Launcher provides access to the Web3 optional ecosystem and additional connected features.",
+  },
+  {
+    text: "Both Web2 and Web3 players share the same servers and battlefields, competing together in the same matches and competitive rankings.",
+  },
+  {
+    text: "Compete globally, climb the ranks, unlock cosmetics that showcase your achievements, and participate in exciting tournaments and esports competitions.",
+  },
+  {
+    text: "In a third-person perspective, players wield deadly katanas and unleash powerful spells in intense battles. Katana Inu follows a strict Fun2Play philosophy, welcoming both Web2 and Web3 players while ensuring a fair and competitive environment.",
+  },
+  {
+    text: "All skins and abilities are purely cosmetic, guaranteeing a balanced experience with no Pay2Win mechanics.",
   },
 ];
 export const aboutKatanaInuWeb3Integration = [
@@ -85,8 +104,8 @@ export const requiremnts = {
 
 export const gameDownloadOptions = [
   {
-    url: "https://download.katanainu.com/Katanainu-launcher.exe",
-    imgPath: "/assets/images/download_btn.png",
+    url: "https://store.steampowered.com/app/2706070/Katana_Inu/",
+    imgPath: "/assets/images/Steam_Logo.png",
   },
   {
     url: "https://download.katanainu.com/Katanainu-launcher.exe",
@@ -310,11 +329,11 @@ export const kataTokenStorePartner = [
     link: "https://www.bitmart.com/trade/en?symbol=KATA_USDT&layout=basic",
     imgUrl: "/assets/images/logo/bit.png",
   },
-  {
-    storeName: "Bitget",
-    link: "https://bit.ly/KataOnBitget",
-    imgUrl: "/assets/images/logo/bitget.png",
-  },
+  // {
+  //   storeName: "Bitget",
+  //   link: "https://bit.ly/KataOnBitget",
+  //   imgUrl: "/assets/images/logo/bitget.png",
+  // },
   {
     storeName: "Mexcglobal",
     link: "https://www.mexc.com/de-DE/exchange/KATA_USDT",
@@ -335,16 +354,16 @@ export const kataTokenStorePartner = [
     link: "https://latoken.com/exchange/KATA_USDT",
     imgUrl: "/assets/images/logo/latoken.png",
   },
-  {
-    storeName: "Coinstore",
-    link: "https://www.coinstore.com/#/spot/KATAUSDT",
-    imgUrl: "/assets/images/logo/coinstore.png",
-  },
-  {
-    storeName: "Bitgert",
-    link: "https://www.probit.com/app/exchange/KATA-USDT",
-    imgUrl: "/assets/images/logo/bitgert.png",
-  },
+  // {
+  //   storeName: "Coinstore",
+  //   link: "https://www.coinstore.com/#/spot/KATAUSDT",
+  //   imgUrl: "/assets/images/logo/coinstore.png",
+  // },
+  // {
+  //   storeName: "Bitgert",
+  //   link: "https://www.probit.com/app/exchange/KATA-USDT",
+  //   imgUrl: "/assets/images/logo/bitgert.png",
+  // },
 ];
 
 export const celebritiesData = [
