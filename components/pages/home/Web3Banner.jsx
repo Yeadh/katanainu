@@ -76,7 +76,9 @@ export default function Web3Banner() {
         </div>
 
         {/* F2P label */}
-        <div className={styles.f2p}>FREE2PLAY &amp; NO-PAY2WIN</div>
+        <div className={styles.f2p}>
+          Play2Earn ecosystem, FREE2PLAY &amp; NO-PAY2WIN{" "}
+        </div>
 
         {/* CTA */}
         <button className={styles.ctaBtn}>DOWNLOAD LAUNCHER</button>

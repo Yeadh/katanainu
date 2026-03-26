@@ -1,4 +1,4 @@
-import Bannner from "@/components/pages/home/Bannner";
+//import Bannner from "@/components/pages/home/Bannner";
 import Brand from "@/components/pages/home/Brand";
 import BrandLogo from "@/components/pages/home/BrandLogo";
 import ChoosePlayer from "@/components/pages/home/ChoosePlayer";
@@ -12,12 +12,12 @@ import WhereToBuyToken from "@/components/pages/home/WhereToBuyToken";
 //import WinBySharing from "@/components/pages/home/WinBySharing";
 import Register from "@/components/Register";
 //import AboutVideo from "@/components/pages/home/AboutVideo";
+import HeroHeader from "@/components/pages/home/HeroHeader";
 import FAQPage from "@/components/pages/home/HomeFaq";
 export default function Home() {
   return (
     <main className="">
-      <Bannner />
-
+      <HeroHeader />
       {/* <WinBySharing /> */}
       <Register />
 

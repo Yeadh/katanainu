@@ -1,9 +1,9 @@
 import ArrowIcon from "@/components/shared/ArrowIcon";
 import { Button } from "@/components/ui/button";
 //import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import HeroHeader from "@/components/pages/home/HeroHeader";
 import Image from "next/image";
 import Link from "next/link";
-
 const Bannner = () => {
   return (
     <section className="banner-section relative">
@@ -22,6 +22,8 @@ const Bannner = () => {
 
       {/* inner content */}
       <div className="absolute top-[35%] left-0 w-full flex flex-col justify-center items-center gap-5 sm:gap-7 z-20 px-10 text-center">
+        <HeroHeader />
+
         <h1 className="text-2xl sm:text-[40px]">
           <Image
             src="/assets/images/title2.png"

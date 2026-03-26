@@ -1,18 +1,9 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { aboutKatanaInu } from "@/data";
+import AboutKatana from "@/components/pages/home/AboutKatana";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
-import { FaTelegramPlane } from "react-icons/fa";
-import {
-  FaCircleArrowRight,
-  FaDiscord,
-  FaPause,
-  FaPlay,
-  FaXTwitter,
-} from "react-icons/fa6";
+import { FaPause, FaPlay } from "react-icons/fa6";
 const videoVariants = {
   hidden: { y: 50, opacity: 0 },
   visible: {
@@ -132,91 +123,7 @@ const Brand = () => {
 
         {/* texts */}
         <div className="flex-1 py-10">
-          <h2 className="text-lg md:text-xl xl:text-2xl text-[#f5a238] pb-4 sm:pb-6">
-            ABOUT KATANA INU
-          </h2>
-          <ul className="ml-0">
-            <li>
-              A fast-paced combat game with competitive PvP modes like 1v1, 3v3
-              and Battle Royale (more coming in the future).
-            </li>
-          </ul>
-          <div className="w-full bg-black py-10 px-4">
-            <div className="max-w-7xl mx-auto">
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-                {features.map((item, index) => (
-                  <div
-                    key={index}
-                    className="border border-orange-500 rounded-xl p-4 text-center text-white 
-                              hover:bg-orange-500/10 transition duration-300"
-                  >
-                    <p className="text-sm sm:text-base font-medium leading-snug">
-                      {item}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-          <ul className="ml-0">
-            {aboutKatanaInu.map((li, i) => (
-              <li
-                key={i}
-                className="flex items-start gap-1 py-0 text-[13px] text-[#e7e7e7] list-none"
-              >
-                <span className="w-4">
-                  <FaCircleArrowRight
-                    color="#f5a238"
-                    size={16}
-                    className="inline-flex"
-                  />
-                </span>
-                <span>{li.text}</span>
-              </li>
-            ))}
-          </ul>
-          <h2 className="text-lg md:text-xl xl:text-2xl text-[#f5a238] pt-4 sm:pt-6">
-            Just jump in and play. No overthinking required. ⚔️
-          </h2>
-
-          {/* btn */}
-          <div className="flex flex-wrap xl:flex-nowrap items-center justify-center xl:justify-between gap-3 pt-2 2xl:pt-4 mx-1">
-            <Link
-              href={"https://twitter.com/katanainu"}
-              target="_blank"
-              rel="norefferer"
-            >
-              <Button
-                variant="customAnimated"
-                className="min-w-[190px] text-[12px] font-bold uppercase flex items-center gap-1.5 lg:gap-2"
-              >
-                <FaXTwitter />
-                follow us on x
-              </Button>
-            </Link>
-            <Link href={"https://discord.com/invite/katanainu"}>
-              <Button
-                variant="customAnimated"
-                className="min-w-[190px] text-[12px] font-bold uppercase flex items-center gap-1.5 lg:gap-2"
-              >
-                <FaDiscord />
-                Join our discord
-              </Button>
-            </Link>
-            <Link
-              href={"https://t.me/katanainu"}
-              target="_blank"
-              rel="norefferer"
-            >
-              <Button
-                variant="customAnimated"
-                className="min-w-[190px] text-[12px] font-bold uppercase flex items-center gap-1.5 lg:gap-2"
-              >
-                <FaTelegramPlane />
-                JOIN OUR TELEGRAM
-              </Button>
-            </Link>
-          </div>
+          <AboutKatana />
         </div>
       </section>
     </div>
