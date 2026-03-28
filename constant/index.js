@@ -9,6 +9,10 @@ export const navlinks = {
           path: "/about-the-game",
         },
         {
+          label: "Web3",
+          path: "web3.katanainu",
+        },
+        {
           label: "Battle Royal",
           path: "/battle-royal",
         },
@@ -58,10 +62,7 @@ export const navlinks = {
         },
       ],
     },
-    {
-      label: "Web3",
-      path: "https://web3.katanainu.com/",
-    },
+
     {
       label: "Marketplace",
       path: "https://kainu.io/",
