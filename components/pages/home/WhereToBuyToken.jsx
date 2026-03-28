@@ -36,6 +36,7 @@ const WhereToBuyToken = () => {
   return (
     <section className="main-container mt-14 md:mt-20 lg:mt-20 xl:mt-28 2xl:mt-32 mb-8 sm:mb-10 md:mb-12 xl:mb-14 2xl:mb-20">
       <div className="flex flex-col justify-center items-center gap-4 sm:gap-6 md:gap-8 mb-4 sm:mb-6 md:mb-8">
+        <h2>$KATA Token is a Web3 product of Katana Inu</h2>
         <h3 className="uppercase text-gradient font-bold tracking-[2px] text-xl sm:text-2xl md:text-3xl font-jost text-center">
           Where Can I Buy $KATA Tokens?
         </h3>
@@ -46,6 +47,12 @@ const WhereToBuyToken = () => {
           swap it for any other token you have. Be careful not to send funds to
           this address directly, as you will lose your tokens.
         </p>
+        <h2>
+          <span className="text-gradient">
+            With $KATA token you can access to Web3, NFTs and Play2Earn
+            Ecosystem!
+          </span>
+        </h2>
       </div>
 
       <div className="flex flex-col md:flex-row md:flex-wrap gap-4 sm:gap-6 md:gap-8">

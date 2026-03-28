@@ -19,7 +19,6 @@ export default function Home() {
     <main className="">
       <HeroHeader />
       {/* <WinBySharing /> */}
-      <Register />
 
       <div className="bg-[url('/assets/images/background.jpg')] bg-[0%_25%] bg-cover z-[1]  relative brand_container">
         <Brand />
@@ -29,8 +28,10 @@ export default function Home() {
         {/* <Blogs /> */}
 
         <PlayClosedBeta />
+
         <FAQPage />
         {/* <Trailers /> */}
+        <Register />
         <ChoosePlayer />
         <TokenOverview />
         <WhereToBuyToken />

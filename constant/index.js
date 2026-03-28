@@ -9,6 +9,18 @@ export const navlinks = {
           path: "/about-the-game",
         },
         {
+          label: "Battle Royal",
+          path: "/battle-royal",
+        },
+        {
+          label: "Game Report",
+          path: "/game-report",
+        },
+        {
+          label: "Roadmap 2",
+          path: "/assets/resources/Roadmap1.png",
+        },
+        {
           label: "Reward",
           path: "https://reward.katanainu.com/",
         },
@@ -26,6 +38,7 @@ export const navlinks = {
         },
       ],
     },
+
     {
       label: "Learn more",
       path: "#",
@@ -34,18 +47,7 @@ export const navlinks = {
           label: "Who are we (team)",
           path: "/team",
         },
-        {
-          label: "Battle Royal",
-          path: "/battle-royal",
-        },
-        {
-          label: "Game Report",
-          path: "/game-report",
-        },
-        {
-          label: "Roadmap 2",
-          path: "/assets/resources/Roadmap1.png",
-        },
+
         {
           label: "Tokenomics",
           path: "/assets/resources/katanainutokenomics.pdf",
@@ -55,6 +57,10 @@ export const navlinks = {
           path: "/assets/resources/katanainuwhitepaper.pdf",
         },
       ],
+    },
+    {
+      label: "Web3",
+      path: "https://web3.katanainu.com/",
     },
     {
       label: "Marketplace",

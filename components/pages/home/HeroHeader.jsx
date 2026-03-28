@@ -50,14 +50,14 @@ export default function HeroHeader() {
             A <strong>fast-paced action game</strong> built for skill, speed and
             competition.
           </p>
-          <p>
+          {/* <p>
             Play on <strong>Steam as a classic Web2 game</strong> — or unlock{" "}
             <strong>Web3 ecosystem features</strong> via the Katana Inu
             Launcher.
-          </p>
+          </p> */}
         </div>
 
-        <div className={styles.heroBtns}>
+        {/* <div className={styles.heroBtns}>
           <a
             href="https://store.steampowered.com/app/2706070/Katana_Inu/"
             className={`${styles.btn} ${styles.btnPrimary}`}
@@ -77,7 +77,7 @@ export default function HeroHeader() {
           >
             👥 Join Community
           </a>
-        </div>
+        </div> */}
       </div>
 
       <div className={styles.scrollHint}>

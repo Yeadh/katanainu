@@ -85,10 +85,17 @@ export default function Web2Banner() {
         <div className={styles.f2p}>FREE2PLAY &amp; NO-PAY2WIN</div>
 
         {/* CTA */}
-        <button className={styles.ctaBtn}>
-          <SteamIcon className={styles.steamIconBtn} />
-          DOWNLOAD ON STEAM
-        </button>
+        <a
+          href="https://store.steampowered.com/app/2706070/Katana_Inu/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.ctaLink} // Optional: for layout styling
+        >
+          <button className={styles.ctaBtn}>
+            <SteamIcon className={styles.steamIconBtn} />
+            DOWNLOAD ON STEAM
+          </button>
+        </a>
       </div>
     </div>
   );

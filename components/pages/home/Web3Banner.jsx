@@ -32,7 +32,9 @@ export default function Web3Banner() {
         </div>
 
         <h1 className={styles.headline}>Play Without Limits</h1>
-        <p className={styles.subline}>Next-gen Web3 gaming ecosystem</p>
+        <p className={styles.subline}>
+          Next-gen Web3 gaming with Play2Earn ecosystem
+        </p>
 
         {/* Features */}
         <div className={styles.features}>
@@ -81,7 +83,13 @@ export default function Web3Banner() {
         </div>
 
         {/* CTA */}
-        <button className={styles.ctaBtn}>DOWNLOAD LAUNCHER</button>
+        <a
+          href="https://download.katanainu.com/Katanainu-launcher.exe"
+          download="Katanainu-launcher.exe"
+          className={styles.linkWrapper}
+        >
+          <button className={styles.ctaBtn}>DOWNLOAD LAUNCHER</button>
+        </a>
       </div>
     </div>
   );

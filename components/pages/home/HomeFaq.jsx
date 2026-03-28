@@ -52,7 +52,10 @@ export default function FAQPage() {
               onClick={() => toggleFAQ(index)}
             >
               <div className="flex justify-between items-center">
-                <h2 className="text-lg font-semibold">{faq.question}</h2>
+                <h2 className="text-lg font-semibold">
+                  <span className="text-gradient">+++</span> {faq.question}{" "}
+                  <span className="text-gradient">+++</span>
+                </h2>
                 <span className="text-xl">
                   {activeIndex === index ? "-" : "+"}
                 </span>
