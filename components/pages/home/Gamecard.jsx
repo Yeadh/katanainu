@@ -11,7 +11,9 @@ const GameCards = () => {
       <div className="relative w-full min-h-[373px] sm:min-h-[641px] flex-1 mt-[70px]">
         <Web3Banner />
       </div>
+
     </div>
+    
   );
 };
 

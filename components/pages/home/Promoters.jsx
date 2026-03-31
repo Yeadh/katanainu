@@ -10,7 +10,7 @@ const Promoters = () => {
   const [hoveredIndex, setHoveredIndex] = useState(-1);
   return (
     <>
-      <div className="flex flex-col justify-center items-center gap-2 mb-7 sm:mb-10 md:mb-12">
+      <div className="flex flex-col justify-center items-center gap-2 mt-7 mb-7 sm:mb-10 md:mb-12">
         <h5 className="uppercase text-gradient font-bold text-xl sm:text-2xl md:text-3xl font-jost text-center">
           Influencer celebrities
         </h5>

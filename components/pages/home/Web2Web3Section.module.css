@@ -1,0 +1,185 @@
+/* components/Web2Web3Section.module.css */
+
+.section {
+  width: 100%;
+  padding: 48px 40px;
+  font-family: 'Exo 2', sans-serif;
+}
+
+/* ── Section Title ── */
+.sectionTitle {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #f0a500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.sectionTitle::before {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(240,165,0,0.35));
+}
+.sectionTitle::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(240,165,0,0.35), transparent);
+}
+
+/* ── Columns ── */
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.col {
+  padding: 28px 36px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.col:first-child {
+  border-right: none;
+  border-radius: 14px 0 0 14px;
+}
+.col:last-child {
+  border-radius: 0 14px 14px 0;
+  border-left: 1px solid rgba(240,165,0,0.1);
+}
+
+/* ── Badge ── */
+.colBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(240,165,0,0.08);
+  border: 1px solid rgba(240,165,0,0.2);
+  border-radius: 50px;
+  padding: 7px 20px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #f0a500;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.badgeSteamIcon {
+  width: 20px;
+  height: 20px;
+  fill: #f0a500;
+  flex-shrink: 0;
+}
+
+/* ── Column Title ── */
+.colTitle {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #f0a500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.colTitle::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(240,165,0,0.3), transparent);
+}
+
+/* ── Bullets ── */
+.bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bullet {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.bulletIcon {
+  flex-shrink: 0;
+  margin-top: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid #f0a500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowSvg {
+  width: 7px;
+  height: 7px;
+}
+
+.bulletText {
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(220, 212, 240, 0.82);
+  line-height: 1.7;
+}
+
+.bulletText strong {
+  color: #f0c040;
+  font-weight: 600;
+}
+
+.bulletDivider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+  margin: 2px 0;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 16px;
+  }
+  .cols {
+    grid-template-columns: 1fr;
+  }
+  .col:first-child {
+    border-right: 1px solid rgba(255,255,255,0.06);
+    border-bottom: none;
+    border-radius: 14px 14px 0 0;
+  }
+  .col:last-child {
+    border-left: 1px solid rgba(255,255,255,0.06);
+    border-top: 1px solid rgba(240,165,0,0.1);
+    border-radius: 0 0 14px 14px;
+  }
+  .col {
+    padding: 24px 20px;
+  }
+  .sectionTitle {
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+  .colTitle {
+    font-size: 15px;
+  }
+  .bulletText {
+    font-size: 14px;
+  }
+  .colBadge {
+    font-size: 12px;
+    padding: 6px 16px;
+  }
+}

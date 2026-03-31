@@ -4,16 +4,16 @@ import BrandLogo from "@/components/pages/home/BrandLogo";
 import ChoosePlayer from "@/components/pages/home/ChoosePlayer";
 //import GameCards from "@/components/pages/home/Gamecard";
 import Newsletter from "@/components/pages/home/Newsletter";
-import Partner from "@/components/pages/home/Partner";
 import PlayClosedBeta from "@/components/pages/home/PlayClosedBeta";
 import Requirements from "@/components/pages/home/Requirements";
 //import TokenOverview from "@/components/pages/home/TokenOverview";
-//import WhereToBuyToken from "@/components/pages/home/WhereToBuyToken";
+import WhereToBuyToken from "@/components/pages/home/WhereToBuyToken";
 //import WinBySharing from "@/components/pages/home/WinBySharing";
-import Register from "@/components/Register";
-//import AboutVideo from "@/components/pages/home/AboutVideo";
 import HeroHeader from "@/components/pages/home/HeroHeader";
 import FAQPage from "@/components/pages/home/HomeFaq";
+import Promoters from "@/components/pages/home/Promoters";
+import Web2Web3Section from "@/components/pages/home/Web2Web3Section";
+import Register from "@/components/Register";
 export default function Home() {
   return (
     <main className="">
@@ -28,14 +28,15 @@ export default function Home() {
         {/* <Blogs /> */}
 
         <PlayClosedBeta />
-
+        <Web2Web3Section />
         <FAQPage />
         {/* <Trailers /> */}
         <Register />
         <ChoosePlayer />
 
         <Requirements />
-        <Partner />
+        <Promoters />
+        <WhereToBuyToken />
         <div className="w-full bg-black">
           <Newsletter />
         </div>

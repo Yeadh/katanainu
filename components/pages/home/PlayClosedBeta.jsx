@@ -91,7 +91,13 @@ const PlayClosedBeta = () => {
             3vs3
           </span>
           <span className="rounded-[18px] border border-[#f5a238] py-2 px-4 font-bold font-jost text-[#f9c306] text-xl md:text-2xl italic">
-            ballte royel
+            Battle Royale
+          </span>
+          <span className="rounded-[18px] border border-[#f5a238] py-2 px-4 font-bold font-jost text-[#f9c306] text-xl md:text-2xl italic">
+            Free4All
+          </span>
+          <span className="rounded-[18px] border border-[#f5a238] py-2 px-4 font-bold font-jost text-[#f9c306] text-xl md:text-2xl italic">
+            Tutorial
           </span>
         </div>
         <div className="hidden sm:block">

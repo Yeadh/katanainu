@@ -8,10 +8,7 @@ export const navlinks = {
           label: "About the game",
           path: "/about-the-game",
         },
-        {
-          label: "Web3",
-          path: "web3.katanainu",
-        },
+
         {
           label: "Battle Royal",
           path: "/battle-royal",
@@ -24,10 +21,7 @@ export const navlinks = {
           label: "Roadmap 2",
           path: "/assets/resources/Roadmap1.png",
         },
-        {
-          label: "Reward",
-          path: "https://reward.katanainu.com/",
-        },
+
         {
           label: "Ranking",
           path: "/ranking",
@@ -51,7 +45,14 @@ export const navlinks = {
           label: "Who are we (team)",
           path: "/team",
         },
-
+        {
+          label: "Web3",
+          path: "web3.katanainu",
+        },
+        {
+          label: "Reward",
+          path: "https://reward.katanainu.com/",
+        },
         {
           label: "Tokenomics",
           path: "/assets/resources/katanainutokenomics.pdf",
@@ -64,6 +65,10 @@ export const navlinks = {
     },
 
     {
+      label: "Partners",
+      path: "/partners",
+    },
+    {
       label: "Marketplace",
       path: "https://kainu.io/",
     },
@@ -75,10 +80,10 @@ export const navlinks = {
       label: "Faq",
       path: "/faq",
     },
-    {
-      label: "Blog",
-      path: "/blogs",
-    },
+    // {
+    //   label: "Blog",
+    //   path: "/blogs",
+    // },
   ],
   socialLinks: [
     {
@@ -94,7 +99,7 @@ export const navlinks = {
       name: "discord",
     },
     {
-      path: "https://www.instagram.com/katanainu",
+      path: "https://www.instagram.com/katanainu_game",
       imageUrl: "/assets/icons/instagram.svg",
       imageUrlC: "/assets/icons/instagram-c.svg",
       name: "instagram",
