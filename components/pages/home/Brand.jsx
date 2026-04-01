@@ -37,16 +37,16 @@ const extraVideos = [
     poster: "/assets/images/footage-poster/gameplay-footage-2.webp",
     name: "gameplay-footage-2",
   },
-  {
-    videoLink: "kEmfOSiqX1g",
-    poster: "/assets/images/footage-poster/new-map.webp",
-    name: "new-map",
-  },
-  {
-    videoLink: "7aqQbZ8Kv7I",
-    poster: "/assets/images/footage-poster/gameplay-footage.webp",
-    name: "gameplay-footage",
-  },
+  // {
+  //   videoLink: "kEmfOSiqX1g",
+  //   poster: "/assets/images/footage-poster/new-map.webp",
+  //   name: "new-map",
+  // },
+  // {
+  //   videoLink: "7aqQbZ8Kv7I",
+  //   poster: "/assets/images/footage-poster/gameplay-footage.webp",
+  //   name: "gameplay-footage",
+  // },
 ];
 
 const Brand = () => {

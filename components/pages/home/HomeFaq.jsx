@@ -7,7 +7,6 @@
 import Image from "next/image";
 import { useState } from "react";
 import styles from "./FaqSection.module.css";
-
 const faqs = [
   {
     question: (

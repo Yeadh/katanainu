@@ -1,82 +1,123 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+// components/AboutFull.jsx
+// DEV: Place /public/gameplay-screenshot.jpg in your public folder
+// Usage: import AboutFull from '@/components/AboutFull'
+
+import styles from "./AboutFull.module.css";
+
+const ArrowIcon = () => (
+  <svg viewBox="0 0 8 8" className={styles.arrowSvg}>
+    <path
+      d="M1 1 L7 4 L1 7"
+      stroke="#f0a500"
+      strokeWidth="1.6"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+const pills = [
+  "🆓 Free2Play",
+  "🎮 High-Quality AAA Graphics",
+  "🏆 Skill-Based Gameplay",
+  "🏟️ eSports & Tournaments",
+  "✅ No Pay2Win — Fun2Play Only",
+];
+
+const bullets = [
+  <>
+    Jump into <strong>1v1, 3v3, Free4All, and Battle Royale</strong> — with more
+    modes coming. Experience{" "}
+    <strong>lightning-fast, skill-driven combat</strong> from a dynamic
+    third-person perspective built for pure competitive intensity.
+  </>,
+  <>
+    <strong>Master the blade.</strong> Chain deadly katana strikes, unleash
+    powerful abilities, <strong>double jump</strong>, and traverse the
+    battlefield with your <strong>grappling hook</strong> in fluid combat that{" "}
+    <strong>rewards precision and mastery</strong>.
+  </>,
+  <>
+    Enter a world <strong>inspired by Asian aesthetics</strong>, brought to life
+    with <strong>stunning environments, beautiful maps</strong>, and
+    unforgettable characters — all crafted with passion and attention to detail
+    since <strong>January 2022</strong>.
+  </>,
+  <>
+    Built for <strong>competition at its core</strong> — Katana Inu is evolving
+    into a <strong>true esports experience</strong> with intense matchups,
+    high-stakes tournaments, and a growing global player community.
+  </>,
+  <>
+    <strong>No shortcuts. No advantages.</strong> All skins and abilities are{" "}
+    <strong>purely cosmetic</strong> — no pay-to-win, ever. This is{" "}
+    <strong>Fun2Play at its peak</strong> — where skill is everything, and every
+    fight matters.
+  </>,
+];
+
+const gameModes = [
+  "⚔️ 1 vs 1",
+  "⚔️ 3 vs 3",
+  "🏆 Battle Royale",
+  "🆓 Free 4 All",
+  "🎓 Tutorial",
+];
 
 export default function About() {
   return (
-    <main className="overflow-hidden">
-      <div className="bg-[url('/assets/images/team_bg.webp')] bg-cover pt-36 sm:pt-44 pb-0 md:pt-48 lg:pt-72 md:pb-20">
-        <div className="main-container">
-          <div className="flex flex-col justify-center items-center gap-2">
-            <h5 className="uppercase font-jost font-bold text-gradient text-xl sm:text-2xl md:text-3xl">
-              About
-            </h5>
-            <h2 className=" max-w-[900px] text-2xl sm:text-3xl md:text-4xl lg:text-[38px] text-center uppercase font-jost text-white font-bold">
-              KATANA INU IS AN ON-CHAIN MULTIPLAYER FREE TO PLAY & PLAY TO EARN
-              GAME
-            </h2>
-          </div>
+    <div className={styles.wrapper}>
+      {/* ══ SECTION 1: HERO ══ */}
+      <section className={styles.aboutHero}>
+        <div className={styles.eyebrow}>About Katana Inu</div>
 
-          <div className="mt-10 sm:mt-14 md:mt-16 lg:mt-20 xl:mt-24 flex flex-col md:flex-row items-start">
-            {/* 1st container */}
-            <div className="flex flex-col flex-1 px-4 py-4 md:py-0">
-              <h3 className="font-grind uppercase text-xl sm:text-2xl md:text-3xl text-white mb-4 md:mb-6 text-left">
-                BEST MULTIPLAYER ON-CHAIN ACTION GAME WITH A P2E ECOSYSTEM
-              </h3>
-              <p className="text-[#e7e7e7] text-xs md:text-sm leading-5 md:leading-7 text-justify mb-2 md:mb-4">
-                Katana Inu promotes gaming innovation by efficiently merging two
-                revolutionary technologies — gaming and blockchain. As an
-                all-encompassing ecosystem for gamers and traders, powered by
-                DeFi and NFT, Katana Inu&apos;s objective is simple: to create a
-                system where gamers can earn from their playtime. Over 1 billion
-                PC gamers play traditional games for several hours daily without
-                profiting from their grind. We hope to change this by developing
-                a unique Play-to-Earn battle royale PC game with NFT mechanics.
-                This approach is the central concept behind Katana Inu! The game
-                comes with rare NFT skins and high graphics to lure players from
-                the blockchain and NFT space and a portion of the 1 billion
-                players of traditional PC games. Katana Inu has a native
-                cross-chain NFT marketplace, which is open to Katana Inu
-                players, regular art dealers, and gamers from other NFT
-                projects.
-              </p>
-              <div className="flex justify-center items-center gap-2 flex-wrap my-4 md:my-2">
-                <Link
-                  href={"https://nft.katanainu.com/"}
-                  target="_blank"
-                  rel="noreferer"
-                >
-                  <Button
-                    variant="customAnimated"
-                    className="w-[148px] py-3 px-4 md:w-[190px] h-[40px] font-semibold"
-                  >
-                    NFTs pages
-                  </Button>
-                </Link>
-                <Link href={"#"}>
-                  <Button
-                    variant="customAnimated"
-                    className="w-[148px] py-3 px-4 md:w-[190px] h-[40px] font-semibold"
-                  >
-                    Buy Token
-                  </Button>
-                </Link>
-                <Link
-                  href={"https://staking.katanainu.com/"}
-                  target="_blank"
-                  rel="noreferer"
-                >
-                  <Button
-                    variant="customAnimated"
-                    className="w-[148px] py-3 px-4 md:w-[190px] h-[40px] font-semibold"
-                  >
-                    Staking Here
-                  </Button>
-                </Link>
-              </div>
+        <div className={styles.heroGrid}>
+          {/* Left */}
+          <div className={styles.heroLeft}>
+            <div className={styles.devBadge}>
+              🗓️ In Development Since January 2022
             </div>
 
-            {/* 2nd container */}
-            <div className="flex-1 px-4 py-4 md:py-0">
+            <h2 className={styles.heroHeadline}>
+              The Best Multiplayer
+              <br />
+              <span>Action Game</span> — Built for
+              <br />
+              Competitive Intensity
+            </h2>
+
+            <p className={styles.heroDesc}>
+              Katana Inu is a{" "}
+              <strong>free-to-play competitive action game</strong> set in a
+              world inspired by <strong>Asian aesthetics</strong> — crafted with
+              passion since January 2022. Players step into fast-paced combat in
+              a <strong>stunning, high-quality environment</strong> full of
+              beautiful maps and unforgettable characters.
+            </p>
+
+            <div className={styles.pills}>
+              {pills.map((p) => (
+                <div key={p} className={styles.pill}>
+                  {p}
+                </div>
+              ))}
+            </div>
+
+            <div className={styles.heroBtns}>
+              <a href="#" className={`${styles.heroBtn} ${styles.btnPrimary}`}>
+                🎮 Play on Steam
+              </a>
+              <a href="#" className={`${styles.heroBtn} ${styles.btnGhost}`}>
+                📖 Learn More
+              </a>
+            </div>
+          </div>
+
+          {/* Right — screenshot */}
+          <div className={styles.heroRight}>
+            {/* DEV: Replace with actual screenshot */}
+            <div className={styles.imgPlaceholder}>
               <video
                 src="https://play.katanainu.com/static/media/bannerbg.c57434e55476e1e65854.mp4"
                 autoPlay
@@ -88,62 +129,87 @@ export default function About() {
                 className="aspect-video"
               />
             </div>
+            {/* <a href="https://www.youtube.com/@KatanaInu" className={styles.moreVideos}>
+              ▶ More Videos →
+            </a> */}
           </div>
         </div>
-        <div className="main-container mt-8 sm:mt-10 md:mt-12 xl:mt-14 2xl:mt-24">
-          <div className="flex flex-col justify-center items-center gap-2">
-            <h5 className="uppercase font-jost font-bold text-gradient text-xl sm:text-2xl md:text-3xl">
-              the game
-            </h5>
-            <h2 className=" max-w-[900px] text-2xl sm:text-3xl md:text-4xl lg:text-[38px] text-center uppercase font-jost text-white font-bold">
-              Play to earn ecosystem
-            </h2>
-          </div>
+      </section>
 
-          <div className="mt-10 sm:mt-14 md:mt-16 lg:mt-20 xl:mt-24 flex flex-col md:flex-row items-start">
-            {/* 1st container */}
-            <div className="flex flex-col flex-1 px-4 py-4 md:py-0">
-              <h3 className="font-grind uppercase text-xl sm:text-2xl md:text-3xl text-white mb-4 md:mb-6">
-                Katana Inu Game
-              </h3>
-              <p className="text-[#e7e7e7] text-xs md:text-sm leading-5 md:leading-7 text-justify mb-2 md:mb-4">
-                Katana Inu, a free-to-play fighting game, offers players the
-                opportunity to earn exclusive NFTs and Katana Inu tokens as
-                in-game rewards. These rewards can be acquired by winning
-                tournaments against other players and teams, completing in-game
-                quests, playing solo, or teaming up with others.
-              </p>
-            </div>
-
-            {/* 2nd container */}
-            <div className="flex-1 px-4 py-4 md:py-0">
-              <div className="flex flex-col flex-1 md:px-4 py-4 md:py-0">
-                <h3 className="font-grind uppercase text-xl sm:text-2xl md:text-3xl text-white mb-4 md:mb-6">
-                  Game Modes
-                </h3>
-                <p className="text-[#e7e7e7] text-xs md:text-sm leading-5 md:leading-7 text-justify mb-2 md:mb-4">
-                  Katana Inu&apos;s primary game mode will be Battle-Royale,
-                  with a maximum of 60 players. In this mode, players can choose
-                  to squad up or go solo against a team of other players in an
-                  interactive open-world map. Katana Inu will also feature
-                  different game modes in smaller map arenas, like 1v1 and 3v3.
-                  While the Battle-Royale mode launched in Q3 2023, the
-                  developers plan to introduce these more competitive game modes
-                  in the future.
-                </p>
-                <p className="text-[#e7e7e7] text-xs md:text-sm leading-5 md:leading-7 text-justify mb-2 md:mb-4">
-                  NFTs play a crucial role in Katana Inu. They serve as skins
-                  and other important in-game assets, offering customization
-                  options. These items are strictly for aesthetic purposes and
-                  do not impact combat. Players can also earn many other
-                  exciting collectibles, including weapons, abilities, spells,
-                  poses, and skins, simply by playing the game.
-                </p>
+      {/* ══ SECTION 2: BULLETS ══ */}
+      <section className={styles.aboutDetail}>
+        <div className={styles.bullets}>
+          {bullets.map((text, i) => (
+            <div key={i}>
+              <div className={styles.bullet}>
+                <div className={styles.bulletIcon}>
+                  <ArrowIcon />
+                </div>
+                <p className={styles.bulletText}>{text}</p>
               </div>
+              {i < bullets.length - 1 && <div className={styles.divider} />}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ══ SECTION 3: GAME MODES ══ */}
+      <section className={styles.gameSection}>
+        <div className={styles.sectionDivider} />
+        <div className={`${styles.eyebrow} ${styles.eyebrowGame}`}>
+          The Game
+        </div>
+
+        <div className={styles.gameCols}>
+          <div>
+            <div className={styles.gameColTitle}>Katana Inu Game</div>
+            <p className={styles.gameColText}>
+              A <strong>free-to-play competitive action game</strong> where
+              players earn exclusive cosmetic rewards by winning tournaments,
+              completing quests, and outplaying opponents in fast-paced
+              skill-driven matches.
+            </p>
+            <p className={styles.gameColText}>
+              Every fight is a test of{" "}
+              <strong>precision, speed and mastery</strong> — chain deadly
+              strikes, use your grappling hook, double jump, and unleash
+              abilities to outmaneuver your enemies.
+            </p>
+            <p className={styles.gameColText}>
+              Developed since <strong>January 2022</strong> with passion for{" "}
+              <strong>Asian aesthetics and AAA quality</strong> — stunning
+              environments, beautiful maps, and unforgettable characters.
+            </p>
+          </div>
+
+          <div>
+            <div className={styles.gameColTitle}>Game Modes</div>
+            <p className={styles.gameColText}>
+              The main mode is <strong>Battle Royale</strong> — up to 60 players
+              on an open-world map, going solo or squadding up. Designed for
+              intense, competitive play at scale.
+            </p>
+            <p className={styles.gameColText}>
+              Smaller arena modes: <strong>1v1, 3v3 and Free4All</strong> reward
+              individual skill and team coordination. A{" "}
+              <strong>Tutorial mode</strong> helps new players get up to speed
+              quickly.
+            </p>
+            <p className={styles.gameColText}>
+              All cosmetic items can be{" "}
+              <strong>earned purely by playing</strong> — they are strictly
+              aesthetic and do <strong>not impact combat</strong> in any way.
+            </p>
+            <div className={styles.modePills}>
+              {gameModes.map((m) => (
+                <div key={m} className={styles.modePill}>
+                  {m}
+                </div>
+              ))}
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </section>
+    </div>
   );
 }

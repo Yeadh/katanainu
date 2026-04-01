@@ -7,10 +7,11 @@ import Newsletter from "@/components/pages/home/Newsletter";
 import PlayClosedBeta from "@/components/pages/home/PlayClosedBeta";
 import Requirements from "@/components/pages/home/Requirements";
 //import TokenOverview from "@/components/pages/home/TokenOverview";
-import WhereToBuyToken from "@/components/pages/home/WhereToBuyToken";
+//import WhereToBuyToken from "@/components/pages/home/WhereToBuyToken";
 //import WinBySharing from "@/components/pages/home/WinBySharing";
 import HeroHeader from "@/components/pages/home/HeroHeader";
 import FAQPage from "@/components/pages/home/HomeFaq";
+import LearnMoreAboutWeb3 from "@/components/pages/home/LearnMoreAboutWeb3";
 import Promoters from "@/components/pages/home/Promoters";
 import Web2Web3Section from "@/components/pages/home/Web2Web3Section";
 import Register from "@/components/Register";
@@ -29,6 +30,10 @@ export default function Home() {
 
         <PlayClosedBeta />
         <Web2Web3Section />
+
+        <div className="flex justify-center">
+          <LearnMoreAboutWeb3 />
+        </div>
         <FAQPage />
         {/* <Trailers /> */}
         <Register />
@@ -36,7 +41,7 @@ export default function Home() {
 
         <Requirements />
         <Promoters />
-        <WhereToBuyToken />
+        {/* <WhereToBuyToken /> */}
         <div className="w-full bg-black">
           <Newsletter />
         </div>

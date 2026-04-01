@@ -2,7 +2,6 @@ import ArrowIcon from "@/components/shared/ArrowIcon";
 import { Button } from "@/components/ui/button";
 //import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import HeroHeader from "@/components/pages/home/HeroHeader";
-import Image from "next/image";
 import Link from "next/link";
 const Bannner = () => {
   return (
@@ -24,7 +23,7 @@ const Bannner = () => {
       <div className="absolute top-[35%] left-0 w-full flex flex-col justify-center items-center gap-5 sm:gap-7 z-20 px-10 text-center">
         <HeroHeader />
 
-        <h1 className="text-2xl sm:text-[40px]">
+        {/* <h1 className="text-2xl sm:text-[40px]">
           <Image
             src="/assets/images/title2.png"
             alt=""
@@ -33,8 +32,8 @@ const Bannner = () => {
             priority={true}
             className="lg:w-[741px] lg:h-[88px]"
           />
-        </h1>
-        <div className="banner-content w-full md:w-1/2 lg:w-1/3">
+        </h1> */}
+        {/* <div className="banner-content w-full md:w-1/2 lg:w-1/3">
           <h2 className=" uppercase text-white font-medium font-poppins">
             1. Katana Inu is a fast paced action game built for players who love
             skill, speed and competition.
@@ -45,7 +44,7 @@ const Bannner = () => {
             game, with Web3 ecosystem features through the official Katana Inu
             launcher.
           </h2>
-        </div>
+        </div> */}
         {/* btn */}
         <div className="flex flex-wrap sm:flex-nowrap items-center justify-center gap-3 pt-2">
           <Link

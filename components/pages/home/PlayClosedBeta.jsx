@@ -1,141 +1,110 @@
-import GameCards from "@/components/pages/home/Gamecard";
-import { gameDownloadOptions } from "@/data";
+// components/DemoSection.jsx
+// DEV: Place /public/katana-logo.png (Katana Inu logo PNG) in your public folder
+// Usage: import DemoSection from '@/components/DemoSection'
+
 import Image from "next/image";
-import Link from "next/link";
+import styles from "./DemoSection.module.css";
 
-const PlayClosedBeta = () => {
+const SteamIcon = () => (
+  <svg
+    className={styles.steamLogo}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.606 0 11.979 0z" />
+  </svg>
+);
+
+const SteamBtnIcon = () => (
+  <svg
+    className={styles.steamBtnSvg}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.606 0 11.979 0z" />
+  </svg>
+);
+
+const modes = [
+  { icon: "⚔️", label: "1 vs 1" },
+  { icon: "⚔️", label: "3 vs 3" },
+  { icon: "🏆", label: "Battle Royale" },
+  { icon: "🎓", label: "Tutorial" },
+  { icon: "🆓", label: "Free 4 All" },
+];
+
+export default function PlayClosedBeta() {
   return (
-    <section className="main-container mt-0 pt-8">
-      <div className="flex flex-col gap-1 justify-center items-center">
-        <h4 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px]  text-gradient font-semibold uppercase font-jost">
-          Play Our
-        </h4>
-        <h4 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] text-white font-bold uppercase font-jost">
-          demo on steam from 11-21 april!
-        </h4>
-        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white font-medium font-jost text-center">
-          Download Now If You Have classic web2 or optional web3 ecosystem.
-        </h2>
+    <div className={styles.section}>
+      {/* 1. Limited Offer */}
+      <div className={styles.eyebrow}>Limited Offer</div>
 
-        {/* download options */}
-        <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-x-3 gap-y-2 lg:gap-x-4 mt-1 mb-6">
-          {gameDownloadOptions.map((opt, i) => (
-            <Link
-              key={i}
-              href={opt.url}
-              className={`${
-                opt.label &&
-                "border-[1.5px] rounded text-white hover:text-[#f5a238] transition-colors duration-500 ease-in-out capitalize px-4 py-5 sm:px-3 sm:py-4 md:px-5 lg:py-6 text-nowrap w-[246px] md:w-auto text-center font-bold"
-              }`}
-            >
-              {opt?.imgPath ? (
-                <Image src={opt.imgPath} alt="" width={246} height={73} />
-              ) : (
-                "Download directly"
-              )}
-            </Link>
-          ))}
-          {/* <Link
-            href={"https://download.katanainu.com/Katanainu-launcher.exe"}
-            target="_blank"
-            rel="noreferrer"
-            className=""
-          >
-            <Image
-              src={"/assets/images/hyperPlay.jpg"}
-              alt=""
-              width={246}
-              height={73}
-              className="sm:w-[160px] md:w-[180px] lg:h-[75px] lg:w-[200px] object-cover sm:object-contain rounded-lg"
-            />
-          </Link> */}
-        </div>
-
-        {/* pvp */}
-        {/* devider */}
-        <div className="hidden sm:block">
-          <svg
-            width="620"
-            height="1"
-            viewBox="0 0 620 1"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              width="620"
-              height="1"
-              fill="url(#paint0_linear_460_173)"
-              fillOpacity="0.3"
-            ></rect>
-            <defs>
-              <linearGradient
-                id="paint0_linear_460_173"
-                x1="0"
-                y1="1.00813"
-                x2="620"
-                y2="1.00813"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#C7C7C7"></stop>
-                <stop offset="0.520833" stopColor="#C7C7C7"></stop>
-                <stop offset="1" stopColor="#C7C7C7" stopOpacity="0"></stop>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div className="flex flex-row gap-3 my-4">
-          <span className="rounded-[18px] border border-[#f5a238] py-2 px-4 font-bold font-jost text-[#f9c306] text-xl md:text-2xl italic">
-            1vs1
-          </span>
-          <span className="rounded-[18px] border border-[#f5a238] py-2 px-4 font-bold font-jost text-[#f9c306] text-xl md:text-2xl italic">
-            3vs3
-          </span>
-          <span className="rounded-[18px] border border-[#f5a238] py-2 px-4 font-bold font-jost text-[#f9c306] text-xl md:text-2xl italic">
-            Battle Royale
-          </span>
-          <span className="rounded-[18px] border border-[#f5a238] py-2 px-4 font-bold font-jost text-[#f9c306] text-xl md:text-2xl italic">
-            Free4All
-          </span>
-          <span className="rounded-[18px] border border-[#f5a238] py-2 px-4 font-bold font-jost text-[#f9c306] text-xl md:text-2xl italic">
-            Tutorial
-          </span>
-        </div>
-        <div className="hidden sm:block">
-          <svg
-            width="620"
-            height="1"
-            viewBox="0 0 620 1"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              width="620"
-              height="1"
-              fill="url(#paint0_linear_460_173)"
-              fillOpacity="0.3"
-            ></rect>
-            <defs>
-              <linearGradient
-                id="paint0_linear_460_173"
-                x1="0"
-                y1="1.00813"
-                x2="620"
-                y2="1.00813"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#C7C7C7"></stop>
-                <stop offset="0.520833" stopColor="#C7C7C7"></stop>
-                <stop offset="1" stopColor="#C7C7C7" stopOpacity="0"></stop>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-
-        {/* access key and other data */}
-        <GameCards />
+      {/* 2. Logos */}
+      <div className={styles.logosRow}>
+        <Image
+          src="/assets/images/katana-logo.png"
+          alt="Katana Inu"
+          width={52}
+          height={52}
+          className={styles.kataLogoImg}
+          style={{ objectFit: "contain", height: "52px", width: "auto" }}
+        />
+        <span className={styles.logoSep}>×</span>
+        <SteamIcon />
       </div>
-    </section>
-  );
-};
 
-export default PlayClosedBeta;
+      {/* 3. Headline */}
+      <h2 className={styles.headline}>
+        Play our <span>Demo on Steam</span>
+      </h2>
+
+      {/* 4. Date */}
+      <div className={styles.dateLine}>From 11 – 21 April</div>
+
+      {/* Subtext */}
+      <p className={styles.subtext}>
+        Available as a <strong>classic Web2 game</strong> on Steam — or with{" "}
+        <strong>Web3 ecosystem features</strong> via the Katana Inu Launcher.
+      </p>
+
+      {/* Buttons */}
+      <div className={styles.btns}>
+        <a
+          href="https://store.steampowered.com/app/2706070/Katana_Inu/"
+          className={`${styles.btn} ${styles.btnSteam}`}
+        >
+          <SteamBtnIcon />
+          Demo on Steam
+        </a>
+        <a
+          href="https://download.katanainu.com/Katanainu-launcher.exe"
+          className={`${styles.btn} ${styles.btnLauncher}`}
+        >
+          ⚡ Game Launcher
+        </a>
+        <a
+          href="https://download.katanainu.com/Katanainu-launcher.exe"
+          className={`${styles.btn} ${styles.btnDirect}`}
+        >
+          ⬇ Download Directly
+        </a>
+      </div>
+
+      {/* Divider */}
+      <div className={styles.divider}>
+        <div className={styles.dividerLine} />
+        <span className={styles.dividerText}>Game Modes</span>
+        <div className={styles.dividerLine} />
+      </div>
+
+      {/* Mode Tags */}
+      <div className={styles.modes}>
+        {modes.map(({ icon, label }) => (
+          <div key={label} className={styles.modeTag}>
+            {icon} {label}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
